@@ -15,8 +15,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
+      <div class="app-container">
+        <div class="row">
+          <div class="col-6" id="local-info">
+            <ul>
+              <li id="city-location">Calgary</li>
+              <li id="local-temp">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="clouds"
+                />
+                1 °C
+              </li>
+              <li id="date">Thursday Feb 25 2020</li>
+              <li id="local-time">18:10</li>
+            </ul>
+          </div>
+          <div class="col-6" id="data-desc">
+            <ul>
+              <li id="humidity">Humidity: 32%</li>
+              <li id="wind">Wind Speed: 9 km/h</li>
+              <li id="description">Scattered Clouds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <a
+        href="https://github.com/jennyraza20/Weather-Application"
+        target="_blank"
+        >Open Source Code</a
+      >
+      by Jenny Raza
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
