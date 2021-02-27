@@ -15,12 +15,38 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2c4278ed5d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather Application</title>
   </head>
   <body>
     <div class="container">
       <div class="app-container">
+        <form id="search-form" class="mb-4">
+          <div class="row">
+            <div class="col-9">
+              <input
+                id="text-box"
+                type="text"
+                placeholder="Type a city..."
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <button id="search-button" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <button id="current-location" type="button">
+                <i class="fas fa-map-marker-alt"></i>
+              </button>
+              <button id="celcius" type="button">°C</button>
+              <button id="faren" type="button">°F</button>
+            </div>
+          </div>
+        </form>
         <h1>Calgary</h1>
         <div class="row">
           <div class="col-6" id="local-info">
