@@ -10,16 +10,22 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather Application</title>
   </head>
   <body>
     <div class="container">
       <div class="app-container">
+        <h1>Calgary</h1>
         <div class="row">
           <div class="col-6" id="local-info">
             <ul>
-              <li id="city-location">Calgary</li>
+              <li id="date">Thursday 18:10</li>
               <li id="local-temp">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
@@ -27,15 +33,14 @@
                 />
                 1 °C
               </li>
-              <li id="date">Thursday Feb 25 2020</li>
-              <li id="local-time">18:10</li>
+              <li id="description">Scattered Clouds</li>
             </ul>
           </div>
           <div class="col-6" id="data-desc">
             <ul>
+              <li id="feels">Feels Like: -9 °C</li>
               <li id="humidity">Humidity: 32%</li>
               <li id="wind">Wind Speed: 9 km/h</li>
-              <li id="description">Scattered Clouds</li>
             </ul>
           </div>
         </div>

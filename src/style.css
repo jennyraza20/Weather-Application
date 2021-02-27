@@ -2,6 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+  color: #6155a6;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
 footer {
   text-align: center;
   color: #6155a6;
@@ -16,7 +24,7 @@ li {
   list-style: none;
 }
 .app-container {
-  margin: 30px auto;
+  margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 30px;
   max-width: 800px;
@@ -27,10 +35,10 @@ li {
 
 #local-info {
   color: #6155a6;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #data-desc {
   color: #6155a6;
-  font-size: 25px;
+  font-size: 30px;
 }
