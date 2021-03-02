@@ -42,3 +42,7 @@ li {
   color: #6155a6;
   font-size: 30px;
 }
+
+#description {
+  text-transform: capitalize;
+}

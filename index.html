@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/2c4278ed5d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather Application</title>
   </head>
@@ -47,7 +48,7 @@
             </div>
           </div>
         </form>
-        <h1>Calgary</h1>
+        <h1 id="city">°C</h1>
         <div class="row">
           <div class="col-6" id="local-info">
             <ul>
@@ -57,16 +58,15 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="clouds"
                 />
-                1 °C
               </li>
-              <li id="description">Scattered Clouds</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="col-6" id="data-desc">
             <ul>
-              <li id="feels">Feels Like: -9 °C</li>
-              <li id="humidity">Humidity: 32%</li>
-              <li id="wind">Wind Speed: 9 km/h</li>
+              <li>Feels Like: <span id="feels"></span>°C</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind Speed: <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
