@@ -61,6 +61,5 @@ function handleSubmit(event) {
 }
 
 search("San Juan");
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
