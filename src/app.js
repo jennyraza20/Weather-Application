@@ -47,17 +47,20 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function searchCity(event) {
-  event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
-  console.log(cityInputElement.value);
+function search(city) {
+  let apiKey = "73277c7b18b5c07a81fafdff51fe6d88";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-let apiKey = "73277c7b18b5c07a81fafdff51fe6d88";
-let city = `Kingston`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+search("San Juan");
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
+form.addEventListener("submit", handleSubmit);
