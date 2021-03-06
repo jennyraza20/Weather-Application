@@ -23,7 +23,6 @@ function formattedDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#local-temp");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -33,6 +32,7 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
+  celsiusTemperature = Math.round(response.data.main.temp);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -60,6 +60,19 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("San Juan");
+function displayFarhTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#local-temp");
+  let farheinheitElement = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(farheinheitElement);
+}
+
+let celciusTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahreinheitLink = document.querySelector("#farhenheit-link");
+fahreinheitLink.addEventListener("click", displayFarhTemp);
+
+search("San Juan");
