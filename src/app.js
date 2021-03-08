@@ -64,14 +64,18 @@ function handleSubmit(event) {
 function displayFahrTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#local-temp");
-  let fahrenheitElement = (celciusTemperature * 9) / 5 + 32;
+  let fahrenheitElement = (celsiusTemperature * 9) / 5 + 32;
+  let unitsElement = document.querySelector("#temp-units");
   temperatureElement.innerHTML = Math.round(fahrenheitElement);
+  unitsElement.innerHTML = "F";
 }
 
 function displayCelTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#local-temp");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  let unitsElement = document.querySelector("#temp-units");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  unitsElement.innerHTML = "C";
 }
 
 let celciusTemperature = null;
