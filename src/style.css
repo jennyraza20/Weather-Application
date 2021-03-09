@@ -33,6 +33,25 @@ li {
   border-radius: 10px;
 }
 
+.weather-forecast {
+  margin-top: 200px;
+}
+
+.weather-forecast h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 18px;
+}
+
 #local-info {
   color: #6155a6;
   font-size: 30px;
