@@ -1,13 +1,6 @@
 function formattedDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+
   let days = [
     `Sunday`,
     `Monday`,
@@ -19,7 +12,7 @@ function formattedDate(timestamp) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${formatHours(timestamp)}`;
 }
 
 function formatHours(response) {
@@ -61,8 +54,12 @@ function displayTemperature(response) {
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  forecastElement.innerHTML = `<div class="col-2">
+  forecastElement.innerHTML = null;
+  let forecast = null;
+
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `<div class="col-2">
                 <h3>${formatHours(forecast.dt * 1000)}</h3>           
                 <img
                   src="http://openweathermap.org/img/wn/${
@@ -75,6 +72,7 @@ function displayForecast(response) {
                 )}°</strong>${Math.round(forecast.main.temp_min)}°
                 </div>
                 </div>`;
+  }
 }
 
 function search(city) {
