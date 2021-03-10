@@ -3,8 +3,8 @@ body {
 }
 
 h1 {
-  font-weight: bold;
-  color: #6155a6;
+  font-weight: bolder;
+  color: #ec6e4c;
   text-align: center;
   margin-bottom: 20px;
   font-size: 50px;
@@ -12,7 +12,7 @@ h1 {
 
 footer {
   text-align: center;
-  color: #6155a6;
+  color: #2d4059;
 }
 
 ul {
@@ -23,14 +23,23 @@ ul {
 li {
   list-style: none;
 }
+
+.button {
+  background-color: none;
+  padding: none;
+  border: none;
+  color: none;
+}
+
 .app-container {
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 800px;
   padding: 50px;
-  border: 1px solid #a685e2;
+  border: 1px solid #2d4059;
   border-radius: 10px;
+  background-color: #decdc3;
 }
 
 .weather-forecast {
@@ -38,8 +47,9 @@ li {
 }
 
 .weather-forecast h3 {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+  margin: 0;
 }
 
 .weather-forecast img {
@@ -49,17 +59,19 @@ li {
 
 .weather-forecast-temperature {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #local-info {
-  color: #6155a6;
+  color: #2d4059;
   font-size: 25px;
+  text-align: center;
 }
 
 #data-desc {
-  color: #6155a6;
+  color: #2d4059;
   font-size: 25px;
+  text-align: center;
 }
 
 #description {
