@@ -6,8 +6,8 @@ h1 {
   font-weight: bold;
   color: #6155a6;
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 60px;
+  margin-bottom: 20px;
+  font-size: 50px;
 }
 
 footer {
@@ -54,12 +54,12 @@ li {
 
 #local-info {
   color: #6155a6;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #data-desc {
   color: #6155a6;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #description {
