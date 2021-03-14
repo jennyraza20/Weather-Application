@@ -24,13 +24,6 @@ li {
   list-style: none;
 }
 
-.button {
-  background-color: none;
-  padding: none;
-  border: none;
-  color: none;
-}
-
 .app-container {
   margin: 0 auto;
   margin-top: 100px;
@@ -76,4 +69,30 @@ li {
 
 #description {
   text-transform: capitalize;
+}
+
+#search-button {
+  background: none;
+  font-size: 30px;
+  border: none;
+  padding: 0px 10px;
+  color: #ec6e4c;
+}
+
+#celsius-link {
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  padding: 0px 8px;
+  color: #ec6e4c;
+}
+
+#fahrenheit-link {
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  padding: 0px 8px;
+  color: #ec6e4c;
 }
