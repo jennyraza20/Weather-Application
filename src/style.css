@@ -4,7 +4,7 @@ body {
 
 h1 {
   font-weight: bolder;
-  color: #ec6e4c;
+  color: #eb5e0b;
   text-align: center;
   margin-bottom: 20px;
   font-size: 50px;
@@ -32,7 +32,7 @@ li {
   padding: 50px;
   border: 1px solid #2d4059;
   border-radius: 10px;
-  background-color: #decdc3;
+  background-color: #a3d2ca;
 }
 
 .weather-forecast {
@@ -43,6 +43,7 @@ li {
   font-size: 15px;
   text-align: center;
   margin: 0;
+  color: #2d4059;
 }
 
 .weather-forecast img {
@@ -53,6 +54,7 @@ li {
 .weather-forecast-temperature {
   text-align: center;
   font-size: 14px;
+  color: #2d4059;
 }
 
 #local-info {
@@ -76,7 +78,7 @@ li {
   font-size: 30px;
   border: none;
   padding: 0px 10px;
-  color: #ec6e4c;
+  color: #eb5e0b;
 }
 
 #celsius-link {
@@ -85,7 +87,7 @@ li {
   font-weight: bold;
   border: none;
   padding: 0px 8px;
-  color: #ec6e4c;
+  color: #eb5e0b;
 }
 
 #fahrenheit-link {
@@ -94,5 +96,5 @@ li {
   font-weight: bold;
   border: none;
   padding: 0px 8px;
-  color: #ec6e4c;
+  color: #eb5e0b;
 }
